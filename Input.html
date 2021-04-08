@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Search API</h1>
+
+
+<p>Results</p>   
+  <form name=form1>
+<input id="myInput" placeholder="Some text.." value="">
+  <button onclick="myFunction()">Get cities</button>
+</form>
+
+<script>
+function myFunction() {
+const input = document.getElementById("myInput").value;
+
+  var apiUrl = "http://localhost:9090/input?name="+input;
+  
+  window.alert(input);
+    fetch(apiUrl).then(response => {
+      return response;
+    }).then(data => {
+      // Work with JSON data here
+      appendData(data);
+    }).catch(err => {
+      // Do something for an error here
+    });
+}
+
+function appendData(data) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
+                mainContainer.appendChild(div);
+            }
+        }
+</script>
+
+
+
+
+</body>
+</html>
