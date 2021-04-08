@@ -1,9 +1,11 @@
 # CodeChallenge
 
-##How to Run
- *Clone this repository
- *Make sure you are using JDK 1.8 and Maven 3.x
- *Once the application runs you should see something like this
+###How to Run
+
+ * Clone this repository
+ * Make sure you are using JDK 1.8 and Maven 3.x
+ * Once the application runs you should see something like this:
+ 
   2021-04-08 22:38:50.597  INFO 23228 --- [           main] c.e.s.SimpleRestApisApplication          : Started SimpleRestApisApplication in 1.539 seconds (JVM running for 1.843)
   2021-04-08 23:19:21.916  INFO 23228 --- [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
   2021-04-08 23:19:21.916  INFO 23228 --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
